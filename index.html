@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Profile card component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+  <style>
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  html{
+    height: 100vh;
+    }
+  body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position:  top -560px left -330px, left 650px top 330px;
+    background-repeat: no-repeat;
+  }
+  .card{
+    width: 350px;
+    height: 374px;
+    background-color: white;
+    font-family: "Kumbh Sans", sans-serif;
+    margin: 130px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    }
+  .top{
+    width:inherit;
+    height: 120px;
+    background: url(images/bg-pattern-card.svg);
+  }
+  img{
+    border: 6px solid white;
+    border-radius: 50%;
+    margin-left: 33%;
+    margin-top: -17%;
+    margin-bottom: 10%;
+  }
+
+  h1, h2{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5%;
+  }
+  #age, h2{
+    font-weight: 300;
+    font-size: 0.9em;
+
+  }
+  table{
+    font-size: 18px;
+    margin-top: 8%;
+  }
+  table tr th{
+    padding-left: 50px;
+    padding-bottom: 7px;
+  }
+  table tr td{
+    padding-left: 60px;
+    font-size: 0.6rem;
+  }
+  h1, table tr th{
+    font-weight: bold;
+  }
+  hr{
+    opacity: 0.3;
+  }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="top"></div>
+    <img src="images/image-victor.jpg">
+  <h1>Victor Crest <span id="age">26</span></h1>
+  <h2>London</h2>
+  <hr>
+<div>
+  <table>
+    <tr><th>80K</th><th>803K</th><th>1.4K</th></tr>
+    <tr><td>Followers</td><td>Likes</td><td>Photos</td></tr>
+  </table>
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hachi</a>.
+  </div>
+</body>
+</html>
