@@ -3,102 +3,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Profile card component</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
 
   <style>
-
-  *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(204, 43%, 93%);
   }
-  html{
-    height: 100vh;
+    .container{
+      width: 640px;
+      margin: auto;
+      color: hsl(204, 43%, 93%);
+      font-weight: lighter;
+      letter-spacing: 0.03em;
+      font-family: Karla, sans-serif;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 15px 10px hsl(204, 30%, 85%);
     }
-  body{
-    background-color: hsl(185, 75%, 39%);
-    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-    background-position:  top -560px left -330px, left 650px top 330px;
-    background-repeat: no-repeat;
-  }
-  .card{
-    width: 350px;
-    height: 374px;
-    background-color: white;
-    font-family: "Kumbh Sans", sans-serif;
-    margin: 130px auto;
-    border-radius: 12px;
-    overflow: hidden;
+    .left, .right{
+        width: 50%;
+        padding: 20px 30px 0 30px;
+        }
+    .top{
+        background-color: #fff;
+        padding: 20px 30px 0 30px;
+        }
+    .top h2{
+        color: hsl(179, 62%, 43%);
     }
-  .top{
-    width:inherit;
-    height: 120px;
-    background: url(images/bg-pattern-card.svg);
-  }
-  img{
-    border: 6px solid white;
-    border-radius: 50%;
-    margin-left: 33%;
-    margin-top: -17%;
-    margin-bottom: 10%;
-  }
+    .bottom{
+        display: flex;
+        flex-direction: row;
+    }
+    .left{
+        background-color: hsl(179, 62%, 43%);
+    }
+    .right{
+        background-color: hsl(179, 48%, 54%);
+    }
+    .price{
+        display: inline;
+        margin-top: 20px;
+    }
+    .per_month{
+      display: inline;
+      margin-left: 10px;
+      opacity: 0.6;
+      vertical-align: 30%;
+    }
+    h1, h2, h3{
+      font-weight: 700;
+    }
+    .top h3{
+      color: hsl(71, 73%, 54%);
+    }
+    .top p{
+      color: hsl(218, 22%, 67%);
+      line-height: 2em;
+    }
+    button{
+      background-color: hsl(71, 73%, 54%);
+      padding: 15px 30px;
+      display:block;
+      margin: 30px auto;
+      color: hsl(204, 43%, 93%);
+      border-style: none;
+      border-radius: 6px;
+      font-size: 1em;
+      font-weight: 600;
+      font-family: inherit;
+      letter-spacing: inherit;
+      width: 100%;
+      box-shadow: 0 10px 15px 10px hsl(179, 62%, 38%);
+    }
+    button:hover{
+      color: hsl(179, 62%, 43%);
+      background-color: hsl(204, 43%, 93%);
+    }
+    ul li{
+      list-style: none;
+      padding-bottom: 4px;
+      margin-left: -40px;
+    }
+    @media only screen and (max-width: 680px){
+      .container{
+          margin: 10% auto;
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          }
+            .bottom{
+                display: inline-flex;
+                flex-direction: column;
+              }
+            .left, .right{
+                width: 100%;
+              }
+              }
 
-  h1, h2{
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 5%;
+  @media only screen and (min-width: 680px){
+    .container{
+      width: 640px;
+      height: 480px;
+      margin: 20px auto;
+    }
+    .top{
+      height: 45%;
+    }
+    .bottom{
+      height: 55%;
+    }
   }
-  #age, h2{
-    font-weight: 300;
-    font-size: 0.9em;
-
-  }
-  table{
-    font-size: 18px;
-    margin-top: 8%;
-  }
-  table tr th{
-    padding-left: 50px;
-    padding-bottom: 7px;
-  }
-  table tr td{
-    padding-left: 60px;
-    font-size: 0.6rem;
-  }
-  h1, table tr th{
-    font-weight: bold;
-  }
-  hr{
-    opacity: 0.3;
-  }
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 60px; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    
+
   </style>
 </head>
-
 <body>
-  <div class="card">
-    <div class="top"></div>
-    <img src="images/image-victor.jpg">
-  <h1>Victor Crest <span id="age">26</span></h1>
-  <h2>London</h2>
-  <hr>
-<div>
-  <table>
-    <tr><th>80K</th><th>803K</th><th>1.4K</th></tr>
-    <tr><td>Followers</td><td>Likes</td><td>Photos</td></tr>
-  </table>
-</div>
-</div>
-  <div class="attribution">
+  <div class="container">
+  <div class="top">
+    <h2>Join our community</h2>
+    <h3>30-day, hassle-free money back guarantee</h3>
+    <p>
+      Gain access to our full library of tutorials along with expert code
+      reviews. <br>Perfect for any developers who are serious about honing their skills.
+    </p>
+  </div>
+  <div class="bottom">
+
+    <div class="left">
+      <h3>Monthly Subscription</h3>
+      <h1 class="price">&dollar;29</h1>
+      <p class="per_month">per month</p>
+      <p class="29">Full access for less than &dollar;1 a day</p>
+      <button>Sign Up</button>
+    </div>
+
+    <div class="right">
+      <h3>Why Us</h3>
+      <ul>
+        <li>Tutorials by industry experts</li>
+        <li>Peer &amp; expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <footer>
+  <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Hachi</a>.
-  </div>
+  </footer>
 </body>
 </html>
