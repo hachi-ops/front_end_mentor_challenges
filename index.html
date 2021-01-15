@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Social proof section</title>
+	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+*{	
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+body{
+  background-image: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  margin: 10% 8%;
+  }
+  main{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+  font-family: Spartan, sans-serif;
+  }
+h1{
+	color: hsl(300, 43%, 22%);
+	font-size: 32px;
+	line-height: 1em;
+	margin-bottom: 30px;	
+	text-align: center;
+	}
+.top-left p{
+	color: hsl(303, 10%, 53%);
+	text-align: center;
+	margin-bottom: 42px;
+	}
+.star-container{
+	width: 100%;
+	height: 78px;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	padding-top: 10px;
+	margin: 14px auto;
+	font-weight: 700;
+	color: hsl(300, 43%, 22%);
+	border-radius: 12px;
+	background-color: hsl(300, 24%, 96%);
+	line-height: 10px;
+	}
+.stars{
+	margin-top:  7px;
+	margin-bottom: 6px;
+	padding-bottom: 10px;
+	}
+.star-container img{
+	padding-right: 5px;
+	}
+.star-container p{
+	font-size: 0.9em;
+	}
+.bottom-container{
+margin-top: 54px;
+}
+.magenta-box{
+	background-color: hsl(300, 43%, 22%);
+	padding: 25px;
+	border-radius: 12px;
+	margin-bottom: 18px;
+	font-size: 14px;
+	
+	}
+#bottom{
+	margin-bottom: 50px;
+	}
+h2{
+	font-size: 0.9em;
+	color: hsl(300, 24%, 96%);
+	}
+h3{
+	color: hsl(333, 80%, 67%);
+	font-weight: 400;
+	font-size: 0.9em;
+	}
+.profile-photo{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 30px;
+	}
+#name-verified-buyer h3{
+	color: hsl(333, 80%, 67%);
+	}
+.photo-caption{
+	display: flex;
+	align-items: center;
+	margin-bottom: 6px;
+	}
+.magenta-box p{
+	color: hsl(300, 24%, 96%);
+	font-size: 0.9em;
+	margin-top: 24px;
+	}
+.attribution {
+	font-size: 11px;
+    text-align: center;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	 }
+.attribution a {
+     color: hsl(228, 45%, 44%);
+      }
+	
+@media only screen and (min-width: 600px) {
+body{
+background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  }
+.star-container{
+	width: 80%;
+}
+#top{
+	transform: translateX(-63px);
+} 
+#bottom{ 
+	transform: translateX(63px); 
+}
+.bottom-container{
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+}
+.magenta-box{
+	width: 80%;
+}
+#box1{
+  align-self: flex-start;
+	}
+#box2{
+	align-self: center;
+	}
+#box3{
+	align-self: flex-end;
+		}
+}
+
+@media only screen and (min-width: 768px) {
+h1{
+	font-size: 38px;
+}
+
+@media only screen and (min-width: 992px) {
+.body{
+	background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+	background-repeat: no-repeat;
+	background-position: top left, right bottom;
+  }
+
+h1, .top-left p{
+	text-align: left;
+}
+.top-container{
+	display: flex;
+}
+.top-left, 
+.top-right{
+    width: 50%;
+    padding: 20px;
+}
+.star-container{
+flex-direction: row;
+min-width: 400px;
+height: 56px;
+ }
+.stars{
+	padding-right: 20px;
+	padding-left: 20px;
+	}
+.bottom-container{
+	display: flex;
+	flex-direction: row;
+	height: 300px;
+	justify-content: space-around;
+	margin: auto;
+}
+.magenta-box{
+	width: 32%;
+	height: 80%;
+}
+}
+	</style>
+  </head>
+  <body>
+  <main>
+  <div class="top-container">
+  <div class="top-left">
+  <h1>10,000+ of our <br/>users love our <br/>products.</h1>
+
+    <p>We only provide great products combined with excellent customer service.
+    See what our satisfied customers are saying about our services.</p>
+  </div>    
+    
+	<div class="top-right">
+	<div id="top" class="star-container">
+	<div class="stars">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	</div>
+	<p>Rated 5 Stars in Reviews</p>
+	</div>
+	<div id="middle" class="star-container">
+	<div class="stars">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	</div>
+	<p>Rated 5 Stars in Report Guru</p>
+	</div>
+	
+	<div id="bottom" class="star-container">
+	<div class="stars">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	<img src="images/icon-star.svg" alt="star">
+	</div>
+	<p>Rated 5 Stars in BestTech</p>
+	</div>
+	</div>
+		
+	</div>
+	   
+    <div class="bottom-container">
+	
+    <div class="magenta-box" id="box1">
+	<div class="photo-caption">
+	
+	<img class="profile-photo" src="images/image-colton.jpg" alt="profile photo">
+	<div id="name-verified-buyer">
+	<h2>Colton Smith</h2>
+	<h3>Verified Buyer</h3>
+	
+	</div>
+	</div>
+	<p>"We needed the same printed design as the one we had ordered a week prior.
+    Not only did they find the original order, but we also received it in time.
+    Excellent!"</p>
+	</div>
+		   
+	<div class="magenta-box" id="box2">
+	<div class="photo-caption">
+	<img class="profile-photo" src="images/image-irene.jpg" alt="profile photo">
+	<div id="name-verified-buyer">
+	<h2>Irene Roberts</h2>
+	<h3>Verified Buyer</h3>
+	</div>
+	</div>
+	
+	<p>"Customer service is always excellent and very quick turn around. Completely
+    delighted with the simplicity of the purchase and the speed of delivery."</p>
+	</div>
+	
+	<div class="magenta-box" id="box3">
+	<div class="photo-caption">
+	<img class="profile-photo" src="images/image-anne.jpg" alt="profile photo">
+	<div id="name-verified-buyer">
+	<h2>Anne Wallace</h2>
+	<h3>Verified Buyer</h3>
+	</div>
+	</div>
+	
+	<p>"Put an order with this company and can only praise them for the very high
+    standard. Will definitely use them again and recommend them to everyone!"</p>
+	</div>  
+
+</div>	
+</main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Hachi</a>.
+    </div>
+	
+	</div>
+  
+</html>
