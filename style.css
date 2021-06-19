@@ -1,0 +1,134 @@
+/* *{
+    outline: 1px solid red;
+
+} */
+html{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: Manrope, sans-serif;
+    font-size: 13px;
+    min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+   
+   
+}
+
+.container{
+    background-color: #fff;
+    /* display: flex;
+   flex-direction: column; */
+    width: 85%;        
+    margin: 20% auto;
+    border-radius: 20px;
+    /* border-color: transparent;
+    border-style: solid; */
+    overflow:hidden;
+    max-width: 400px;
+  
+    
+}
+img{
+    display: block;   
+    min-width: 100%;
+    height: auto;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 0.9em;
+    color: hsl(214, 17%, 51%);
+   line-height: 1.6em;
+}
+h2{
+ color: hsl(214, 17%, 51%);
+    font-size: 0.9em; 
+}
+
+p{
+    font-weight: 500;
+    color: hsl(212, 23%, 69%);
+    font-size: 0.8em;
+    line-height: 1.7em;
+ 
+    
+}
+.text{
+    padding: 20px 20px 10px 20px;
+}
+.share{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   align-items: center;
+}
+
+#icon{
+ 
+    max-width:15px;
+     max-height: 13px;
+     background-color:  hsl(210, 46%, 95%);
+     padding: 9px;
+     border-radius: 50%;
+     float: right;
+
+}
+
+#avatar{
+    width: 43px;
+    border-radius: 50%;
+}
+@media only screen and (min-width: 375px){
+.share{
+    flex-direction: row;
+    
+    justify-content: left;
+  
+}
+
+.name-date{
+    width: 70%;
+}
+h1{
+    font-size: 1.2em;
+}
+p, h2{
+    font-size: 1em;
+    margin: 7px;
+    padding: 0;
+}
+
+}
+
+@media only screen and (min-width: 994px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-width: 100vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+       
+        
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        max-width: 900px;
+       
+    }
+
+.text{
+    width: 500px;
+    
+}
+    #drawers img{
+        width: 400px;
+    }
