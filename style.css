@@ -1,134 +1,131 @@
-/* *{
-    outline: 1px solid red;
+:root{
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    }
 
-} */
-html{
+*{
+    outline: 1px solid red;
     margin: 0;
     padding:0;
-    box-sizing: border-box;
-    
+    /* box-sizing: border-box; */
 }
-body{
-    font-family: Manrope, sans-serif;
-    font-size: 13px;
-    min-height: 100vh;
-    background-color: hsl(210, 46%, 95%);
    
-   
-}
-
-.container{
-    background-color: #fff;
-    /* display: flex;
-   flex-direction: column; */
-    width: 85%;        
-    margin: 20% auto;
-    border-radius: 20px;
-    /* border-color: transparent;
-    border-style: solid; */
-    overflow:hidden;
-    max-width: 400px;
-  
+    ul{
+        list-style-type: none;
+    }
     
-}
-img{
-    display: block;   
-    min-width: 100%;
-    height: auto;
-}
-
-h1{
-    font-weight: 700;
-    font-size: 0.9em;
-    color: hsl(214, 17%, 51%);
-   line-height: 1.6em;
-}
-h2{
- color: hsl(214, 17%, 51%);
-    font-size: 0.9em; 
-}
-
-p{
-    font-weight: 500;
-    color: hsl(212, 23%, 69%);
-    font-size: 0.8em;
-    line-height: 1.7em;
- 
-    
-}
-.text{
-    padding: 20px 20px 10px 20px;
-}
-.share{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-   align-items: center;
-}
-
-#icon{
- 
-    max-width:15px;
-     max-height: 13px;
-     background-color:  hsl(210, 46%, 95%);
-     padding: 9px;
-     border-radius: 50%;
-     float: right;
-
-}
-
-#avatar{
-    width: 43px;
-    border-radius: 50%;
-}
-@media only screen and (min-width: 375px){
-.share{
-    flex-direction: row;
-    
-    justify-content: left;
-  
-}
-
-.name-date{
-    width: 70%;
-}
-h1{
-    font-size: 1.2em;
-}
-p, h2{
-    font-size: 1em;
-    margin: 7px;
-    padding: 0;
-}
-
-}
-
-@media only screen and (min-width: 994px){
-    body{
-        display: flex;
-        flex-direction: column;
-        min-width: 100vh;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.1rem;
-       
+    img{      
+        display: block;
+        max-width: 100%;
+        height: auto;   
+    }
+    h1{
+        padding-bottom: 18px;
+    }
+    h1, h2{
+        font-size: 1.3em;
         
     }
-    .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        max-width: 900px;
-       
+    h2{
+        text-align: center;
     }
 
-.text{
-    width: 500px;
+    .avatar-text p{
+        text-align: center;
+    }
+
+body{
+   
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-grayish-blue);   
+    padding: 0 20px;
+    color: var( --very-dark-grayish-blue);
+}
+
+
+
+.container{
+    
+    margin: 0 auto;
+    font-family: Manrope, sans-serif;
+    background-color: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+
+   
     
 }
-    #drawers img{
-        width: 400px;
+
+
+.container .text{
+    padding: 25px 25px 15px 25px;
+    font-size: 13px;
+   
+  
+}
+
+.container .description h2{
+    font-size: 20px;
+    line-height: 1.4;
+    padding-bottom:20px;
+}
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+ #share{
+   background-color: var(--light-grayish-blue);
+   padding: 10px;
+   border-radius: 50%;;
+}
+
+.avatar-img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@media(min-width: 375px){
+.container{
+    max-width: 350px;
+}
+
+    .avatar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
+    .avatar-text{
+        padding-left: 25px;
+    }
+    .avatar-img-and-text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+@media(min-width: 992px){
+    .container{
+        displaY: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 900px; 
+        
+    }
+}
