@@ -9,3 +9,5 @@ shareBtn.addEventListener("click", () => {
 removeShareBtn.addEventListener("click", () => {
     socials.classList.remove("clicked")
 })
+
+
