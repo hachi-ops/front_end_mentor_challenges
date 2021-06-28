@@ -1,0 +1,64 @@
+/* css styling */
+:root{
+--red: hsl(0, 100%, 74%);
+--green: hsl(154, 59%, 51%);
+--blue: hsl(248, 32%, 49%);
+--dark-blue: hsl(249, 10%, 26%);
+--grayish-blue: hsl(246, 25%, 77%);
+}
+
+*{
+    /* outline: 1px solid red;   */
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box
+}
+
+body{
+background-color: var(--red);
+color: #fff;
+background-image: url(images/bg-intro-mobile.png);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+.container{
+/* margin: 60px 20px 40px 20px; */
+font-size: 16px;
+font-family: Poppins, sans-serif;
+text-align: center;
+}
+
+h1{
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    max-width: 95%;
+}
+
+.heading p{
+    margin-bottom: 20px;   
+    max-width: 95%;
+    font-weight: 400;;
+}
+
+.blue {
+    background-color: var(--blue);
+    box-shadow: 0 8px rgba(121, 107, 107, 0.5);
+    max-width: 340px;
+    margin: 25px auto;    
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;     
+}
+
+.blue p{
+    max-width: 60%;
+}
+
+.blue span{
+    font-weight: 700;
+}
+

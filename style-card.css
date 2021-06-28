@@ -1,0 +1,48 @@
+/* style-card */
+
+.card{
+    background-color: #fff;
+    max-width: 350px;
+    padding: 20px 10px 30px 10px;
+    border-radius: 12px;
+    box-shadow: 0 6px rgba(107, 92, 92, 0.5);
+    }
+
+    button{    
+    color: #fff;
+    border-style: none;
+    background-color: var(--green);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;   
+    box-shadow: 0 4px  rgba(107, 92, 92, 0.5);     
+    letter-spacing: .09em;;
+    
+    }
+
+    input{  
+    font-family: inherit;       
+    font-weight: 700;
+    color: var(--dark-blue);       
+    border: 1px solid var(--blue);     
+    }
+
+button, input{
+    display: block;    
+    border-radius: 8px; 
+    padding: 18px; 
+    width: 80%;
+    margin-bottom: 15px;     
+}
+
+   .terms{
+    color: var(--grayish-blue);
+    font-size: 0.65em;
+    font-weight: 500;
+    max-width: 65%;
+    }
+    
+    .terms span a{
+    color: var(--red);
+    font-weight: 700;
+    }
