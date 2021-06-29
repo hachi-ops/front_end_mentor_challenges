@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="style.css"/>
 <link rel="stylesheet" href="style-card.css"/>
 <link rel="stylesheet" href="media-query.css"/>
+<script src="script.js"></script>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -32,19 +33,53 @@
 </div>
     
     <div class="card">
-
-      <input type="text" placeholder="First Name">   
+      <form action="#">
+        <div class="questions">         
+           
+          <img src="images/icon-error.svg" class="error-icon" alt="error-icon">
+          <label for="firstName">First Name</label>
+          <input type="text" id ="firstName" name="firstName" placeholder="First Name">   
+       
     
-      <input type="text" placeholder="Last Name">
-      
-      <input type="email" placeholder="Email Address">
-      
-      <input type="password" placeholder="Password">
-      
-      <button>Claim your free trial</button>
-         
-      <p class="terms"> By clicking the button, you are agreeing to our <span><a href="#">Terms and Services</a></span></p>
+          <p class="error-text">First name cannot be empty</p>
+        </div>
 
+        <div class="questions">
+          <img src="images/icon-error.svg" class="error-icon" alt="error-icon">
+          <label for="lastName">First Name</label>
+          <input type="text" id ="lastName" name="lastName" placeholder="Last Name">   
+        
+        
+    
+          <p class="error-text">Last name cannot be empty</p>
+        </div>
+
+        <div class="questions">
+           
+          <img src="images/icon-error.svg" class="error-icon" alt="error-icon">
+          <label for="email">Email</label>
+          <input type="email" id ="email" name="email" placeholder="Email Address">   
+       
+    
+          <p class="error-text">Looks like this is not an email</p>
+        </div>
+
+        
+        <div class="questions">
+                  
+          <img src="images/icon-error.svg" class="error-icon" alt="error-icon">
+          <label for="password">Password</label>
+          <input type="password" id ="password" name="password" placeholder="Password">   
+
+    
+          <p class="error-text">Password cannot be empty</p>
+        </div>
+
+        <button  type="submit" name="submit" value="submit">Claim your free trial</button>
+         
+        <p class="terms"> By clicking the button, you are agreeing to our <span><a href="#">Terms and Services</a></span></p>
+           </form>   
+   
     </div>
   </div>
   </div>  
@@ -52,8 +87,9 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Hachi</a>.
     </p>
   </footer>
+  
 </body>
 </html>

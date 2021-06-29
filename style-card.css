@@ -1,48 +1,93 @@
 /* style-card */
 
 .card{
-    background-color: #fff;
-    max-width: 350px;
-    padding: 20px 10px 30px 10px;
-    border-radius: 12px;
-    box-shadow: 0 6px rgba(107, 92, 92, 0.5);
-    }
-
-    button{    
-    color: #fff;
-    border-style: none;
-    background-color: var(--green);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;   
-    box-shadow: 0 4px  rgba(107, 92, 92, 0.5);     
-    letter-spacing: .09em;;
-    
-    }
-
-    input{  
-    font-family: inherit;       
-    font-weight: 700;
-    color: var(--dark-blue);       
-    border: 1px solid var(--blue);     
-    }
-
-button, input{
-    display: block;    
-    border-radius: 8px; 
-    padding: 18px; 
-    width: 80%;
-    margin-bottom: 15px;     
+background-color: #fff;
+max-width: 350px;
+padding: 30px 10px 30px 10px;
+border-radius: 12px;
+box-shadow: 0 8px hsla(249, 10%, 26%, .3);
 }
 
-   .terms{
-    color: var(--grayish-blue);
-    font-size: 0.65em;
-    font-weight: 500;
-    max-width: 65%;
-    }
+button{    
+color: #fff;
+border-style: none;
+background-color: var(--green);
+text-align: center;
+text-transform: uppercase;
+font-weight: 500;   
+box-shadow: 0 4px  hsl(154, 69%, 41%);     
+letter-spacing: .09em;;
+}
+
+button:hover{
+cursor: pointer;
+background-color: hsl(154, 66%, 60%);
+}
+
+input{  
+
+font-family: inherit;       
+font-weight: 700;
+color: var(--dark-blue);       
+border: 1px solid var(--grayish-blue);  
+outline: none;   
+}
+
+button, input{
+display: block;    
+border-radius: 8px; 
+padding: 16px; 
+width: 100%;
+margin-bottom: 15px;     
+}
+
+.terms{
+color: var(--grayish-blue);
+font-size: 0.65em;
+font-weight: 500;
+max-width: 65%;
+}
     
-    .terms span a{
+.terms span a{
+color: var(--red);
+font-weight: 700;
+}
+
+.error-text, .error-icon{
+display: none;
+}
+
+.blue-and-card label{
+display: none;
+}
+
+.blue-and-card input:focus{
+border: 1.5px solid var(--dark-blue);
+}
+
+.questions{
+    position: relative;
+}
+
+.error-icon{  
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+.error-text{
+    text-align: right;
+    font-size: 0.7em;
+    font-style: italic;
     color: var(--red);
-    font-weight: 700;
-    }
+    font-weight: 500;
+}
+
+.questions.error .error-text, 
+.questions.error .error-text{
+display: block;
+}
+
+.questions.error input{
+    border: 2px solid var(--red);
+}
