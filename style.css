@@ -75,3 +75,21 @@ max-width: 60%;
 font-weight: 700;
 }
 
+/* .errors{
+    border: 2px solid hsl(0, 100%, 74%);
+    background: url(images/icon-error.svg) no-repeat;
+    background-position: 95% 50%;
+}
+
+.errors-text{
+    font-size: 12px;
+    font-style: italc;
+    margin-left: auto;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    color: hsl(0, 100%, 74%);
+}
+
+.success{
+    border: 2px soid hsl(154, 59%, 51%);
+} */

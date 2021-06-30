@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="style.css"/>
 <link rel="stylesheet" href="style-card.css"/>
 <link rel="stylesheet" href="media-query.css"/>
-<script src="script.js"></script>
+<script src="./script.js"></script>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -33,35 +33,37 @@
 </div>
     
     <div class="card">
-      <form action="#">
+      <form action="#" id="form" onsubmit="return validateForm()">
         <div class="questions">         
            
           <img src="images/icon-error.svg" class="error-icon" alt="error-icon">
-          <label for="firstName">First Name</label>
-          <input type="text" id ="firstName" name="firstName" placeholder="First Name">   
-       
-    
-          <p class="error-text">First name cannot be empty</p>
+          <label for="fName">First Name</label>
+          <input type="text" id ="fName" name="firstName" placeholder="First Name" autocomplete="off">  
+                 <span></span>
+          <!-- <p class="error-text">First name cannot be empty</p> -->
+          
         </div>
 
         <div class="questions">
           <img src="images/icon-error.svg" class="error-icon" alt="error-icon">
-          <label for="lastName">First Name</label>
-          <input type="text" id ="lastName" name="lastName" placeholder="Last Name">   
+          <label for="lName">First Name</label>
+          <input type="text" id ="lName" name="lastName" placeholder="Last Name" >   
+          <span></span>
         
         
-    
-          <p class="error-text">Last name cannot be empty</p>
+<!--     
+          <p class="error-text">Last name cannot be empty</p> -->
         </div>
 
         <div class="questions">
            
           <img src="images/icon-error.svg" class="error-icon" alt="error-icon">
           <label for="email">Email</label>
-          <input type="email" id ="email" name="email" placeholder="Email Address">   
+          <input type="email" id ="email" name="email" placeholder="Email Address" autocomplete="off">   
+          <span></span>
        
     
-          <p class="error-text">Looks like this is not an email</p>
+          <!-- <p class="error-text" style="display:none">Looks like this is not an email</p> -->
         </div>
 
         
@@ -70,12 +72,11 @@
           <img src="images/icon-error.svg" class="error-icon" alt="error-icon">
           <label for="password">Password</label>
           <input type="password" id ="password" name="password" placeholder="Password">   
-
-    
-          <p class="error-text">Password cannot be empty</p>
+       
+          <p class="error-text" style="display:none">Password cannot be empty</p>
         </div>
 
-        <button  type="submit" name="submit" value="submit">Claim your free trial</button>
+        <button  type="submit" name="submit" value="submit" onclick="validateForm()">Claim your free trial</button>
          
         <p class="terms"> By clicking the button, you are agreeing to our <span><a href="#">Terms and Services</a></span></p>
            </form>   
@@ -83,6 +84,30 @@
     </div>
   </div>
   </div>  
+  <script>
+    function validateForm(){
+      var password = document.querySelector('#password').value;
+
+      if(password == null || password == ""){
+        document.querySelector('.error-text').style.display='block';
+      }
+    // else{
+      
+    //   var email = document.querySelector('#email').value;
+
+    //   if(email == null || email == ""){
+    //     document.querySelector('.error-text').style.display='block';
+
+    // }
+
+
+    //   }
+    }
+    
+  //   function myFunction() {
+  //   document.querySelector('.error-text').style.display='block';
+  // }
+  </script>
   
   <footer>
     <p class="attribution">
@@ -90,6 +115,7 @@
       Coded by <a href="#">Hachi</a>.
     </p>
   </footer>
+
   
 </body>
 </html>

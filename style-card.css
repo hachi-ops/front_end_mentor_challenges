@@ -52,10 +52,10 @@ max-width: 65%;
 color: var(--red);
 font-weight: 700;
 }
-
+/* 
 .error-text, .error-icon{
 display: none;
-}
+} */
 
 .blue-and-card label{
 display: none;
@@ -83,10 +83,10 @@ border: 1.5px solid var(--dark-blue);
     font-weight: 500;
 }
 
-.questions.error .error-text, 
+/* .questions.error .error-text, 
 .questions.error .error-text{
 display: block;
-}
+} */
 
 .questions.error input{
     border: 2px solid var(--red);
