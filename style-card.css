@@ -75,14 +75,21 @@ border: 1.5px solid var(--dark-blue);
     right: 13px;
 }
 
-.error-text{
+/* .error-text{
+    text-align: right;
+    font-size: 0.7em;
+    font-style: italic;
+    color: var(--red);
+    font-weight: 500;
+} */
+
+#firstnameErr, #lastnameErr, #emailErr, #passwordErr{
     text-align: right;
     font-size: 0.7em;
     font-style: italic;
     color: var(--red);
     font-weight: 500;
 }
-
 /* .questions.error .error-text, 
 .questions.error .error-text{
 display: block;
