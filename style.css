@@ -53,7 +53,7 @@ max-width: 95%;
 }
 
 .heading p{
-margin-bottom: 20px;   
+margin-bottom: 20px;
 max-width: 95%;
 font-weight: 400;
 }
@@ -62,7 +62,7 @@ font-weight: 400;
 background-color: var(--blue);
 box-shadow: 0 8px hsla(249, 10%, 26%, .3);
 max-width: 340px;
-margin: 25px auto;    
+margin: 25px auto;
 padding: 18px;
 border-radius: 8px;
 }
@@ -93,3 +93,84 @@ font-weight: 700;
 .success{
     border: 2px soid hsl(154, 59%, 51%);
 } */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+
+.form {
+    padding: 10px 20px;
+}
+
+.form h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.field {
+    margin-bottom: 5px;
+
+}
+
+.field label {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.field input {
+    border: solid 2px #f0f0f0;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.field input:focus {
+    outline: none;
+}
+
+.field.error input {
+    border-color: var(--error-color);
+}
+
+.field.success input {
+    border-color: var(--success-color);
+}
+
+
+.field small {
+    color: var(--error-color);
+}
+
+
+/* button */
+.btn {
+    width: 100%;
+    padding: 3%;
+    background: #007bff;
+    border-bottom: 2px solid #007bff;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #0069d9;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
