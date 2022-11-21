@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  padding: 0 20px;
+  margin: 0 auto;
+  color: hsl(234, 12%, 34%);
+}
+header,
+main {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+}
+header,
+h1 {
+  text-align: center;
+}
+h1 {
+  font-weight: 200;
+}
+h2 {
+  margin-top: 2px;
+}
+span,
+h2 {
+  font-weight: 600;
+}
+#intro {
+  margin: 0 auto;
+  max-width: 500px;
+}
+p {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+.box p {
+  margin-top: -12px;
+}
+.box {
+  height: 28vh;
+  background-color: #fff;
+  border-top: 4px solid;
+  border-right: 1px solid none;
+  border-left: 1px solid none;
+  border-bottom: 1px solid none;
+  border-radius: 10px;
+  padding: 12px 15px;
+  box-shadow: 2px 8px 8px 2px hsl(229, 6%, 66%);
+  margin: 20px 10px;
+  position: relative;
+}
+.cyan {
+  border-top-color: hsl(180, 62%, 55%);
+}
+.red {
+  border-color: hsl(0, 78%, 62%);
+}
+.orange {
+  border-color: hsl(34, 97%, 64%);
+}
+.blue {
+  border-color: hsl(212, 86%, 64%);
+}
+img {
+  width: 50px;
+  align-self: flex-end;
+  margin: auto 10px 10px auto;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+@media only screen and (max-width: 259px) {
+  header,
+  main {
+    font-size: 13px;
+  }
+  img {
+    width: 34px;
+  }
+  .box {
+    height: 26vh;
+  }
+}
+@media only screen and (min-width: 260px) {
+  .box {
+    width: 80%;
+    margin: 25px auto;
+  }
+}
+@media only screen and (min-width: 260px) and (max-width: 439px) {
+  .box {
+    height: 24vh;
+  }
+  img {
+    width: 38px;
+  }
+  header,
+  main {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 490px) and (max-width: 739px) {
+  .box {
+    height: 24vh;
+  }
+}
+@media only screen and (min-width: 740px) and (max-width: 839px) {
+  .box {
+    height: 22vh;
+  }
+}
+@media only screen and (min-width: 840px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle {
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 1035px) {
+  main {
+    max-width: 90%;
+    margin: auto;
+  }
+  .box {
+    width: 260px;
+  }
+}
