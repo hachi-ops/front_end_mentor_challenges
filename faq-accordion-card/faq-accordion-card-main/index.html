@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img class="bg-pattern-mobile" src="images/bg-pattern-mobile.svg"/>
+    <img class="bg-pattern-desktop" src="images/bg-pattern-desktop.svg"/>
+  <img class="woman-mobile" src="images/illustration-woman-online-mobile.svg"/>
+  <img class="woman-desktop" src="images/illustration-woman-online-desktop.svg"/>
+ 
+
+  <div class="text">
+    <h1>FAQ</h1>
+
+    <h2><b>How many team members can I invite?</b></h2>
+  
+    <img class="arrow" src="images/icon-arrow-down.svg"/>
+  
+    <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
+      team members for the Premium plan.</p>
+  
+      <hr/>
+  
+      <h2><b>What is the maximum file upload size?</b></h2>
+  
+      <img class="arrow" src="images/icon-arrow-down.svg"/>
+  
+      <p class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      <hr/>
+  <h2><b>How do I reset my password?</b></h2>
+  
+  <img class="arrow" src="images/icon-arrow-down.svg"/>
+    
+  <p class="answer">  Click “Forgot password” from the login page or “Change password” from your profile page.
+    A reset link will be emailed to you.</p>
+    <hr/>
+  <h2><b>Can I cancel my subscription?</b></h2>
+  
+  <img class="arrow" src="images/icon-arrow-down.svg"/>
+  
+  
+  <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+  
+  <hr/>
+  
+    <h2><b>Do you provide additional support?</b></h2>
+  
+  <img class="arrow"src="images/icon-arrow-down.svg"/>
+  
+  
+  
+  <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+  <hr/>
+  </div>
+
+  
+  </div>
+
+  
+ <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hachi</a>.
+  </div>
+
+
+
+<script>
+  var question = document.getElementsByClassName("arrow");
+  var i;
+for (i = 0; i < question.length; i++) {
+  question[i].addEventListener("click", function() {      
+    var answer = this.nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+}    
+
+</script>
+</body>
+</html>
