@@ -1,0 +1,153 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container{
+    margin: 0 20%;
+    margin-top: 90px; 
+    border-radius: 8px;  
+   
+}
+
+.section{
+min-height: 33.3%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+box-sizing: border-box;
+padding: 45px;
+}
+
+.orange{
+background-color: hsl(31, 77%, 52%);
+}
+
+.dark-cyan{
+background-color: hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan{
+background-color: hsl(179, 100%, 13%);
+}
+
+.icon{
+display: block;
+width: 60px;
+height: 36px;
+/* margin-top: 40px; */
+}
+
+
+h2{
+    font-family: 'Big Shoulders display', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    padding: 0;
+    line-height: 0.9em;
+}
+
+p, button{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+p{
+color: hsla(0, 0%, 100%, 0.75);
+line-height: 1.7em;
+/* margin-right: 45px; */
+margin-bottom: 27px;
+font-size: 0.95em;
+
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border-radius: 22px;
+    border-color: transparent;
+    
+}
+ button:hover{
+     cursor: pointer; 
+     border: 1px solid hsl(0, 0%, 95%);     
+ }
+
+.orange button{
+    color: hsl(31, 77%, 52%);
+}
+.orange button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+.dark-cyan button{
+    color: hsl(184, 100%, 22%);
+     
+}
+.dark-cyan button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%); 
+}
+.very-dark-cyan button{
+    color: hsl(179, 100%, 13%);
+}
+.very-dark-cyan button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution{
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+
+@media(max-width: 375px){
+    .container{
+        width: 87%;
+        margin: 90px 10%;
+    }
+    
+}
+
+@media(min-width: 376px){
+    .container{
+        width: 325px;
+    } 
+}
+
+@media(min-width: 1024px){
+
+    .container{
+        display: flex;        
+        justify-content: center;
+        height: 450px;
+        
+    }
+
+    .section{
+        padding: 40px;
+    }
+    p{
+        width: 188px;
+        font-size: 0.9em;
+        margin-bottom: 30px;
+    }
+  
+}
