@@ -1,0 +1,71 @@
+/* media query */
+
+@media (min-width: 992px){
+
+    body{
+        background-image: url(images/bg-intro-desktop.png);
+    }
+    .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+   
+    }
+
+   .heading{
+    width: 100%;
+   }
+
+   h1{
+    font-size: 3em;
+    max-width: none;
+    line-height: 1.2em;
+   }
+
+   .blue-and-card{
+    width: 100%;
+    min-width: 450px;
+    margin: 0;
+   }
+
+   .blue{
+    padding: 14px 0 10px 0;
+   }
+
+   .blue p{   
+    max-width: none;
+    margin: 0;
+    text-align: center;
+   }
+
+    .card, .blue{
+    min-width: 450px;
+    max-width: 70%;
+    }
+
+    input, button, .blue{
+    height: 50px;
+    }
+
+    input, button{
+    margin-bottom: 30px;
+    }
+
+    button{
+    padding: 0;
+    }
+
+    .terms{    
+    font-size: 0.5em;
+    }
+
+    .heading{
+    text-align: left;
+    }
+
+    .heading h1, .heading p{
+    max-width: 60%;
+    }
+    }
